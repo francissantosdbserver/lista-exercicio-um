@@ -25,6 +25,5 @@ public class Jokenpo {
         } else {
             System.out.println("Máquina Vence!");
         }
-
     }
 }
