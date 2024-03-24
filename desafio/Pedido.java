@@ -2,15 +2,15 @@ package desafio;
 
 public class Pedido {
 
-    public void checarTroco(double pagamento){
+    public void devolverTroco(double pagamento){
         if(pagamento >= imprimeValorTotal()){
-            troco = devolverTroco(pagamento);
+            troco = calculaTroco(pagamento);
             return troco;
         }
         System.out.println("Valor insuficiente");
     }
 
-    public void devolverTroco(double pagamento) {
+    public void calculaTroco(double pagamento) {
         pagamento - imprimeValorTotal();
     }
 }
